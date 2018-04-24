@@ -529,10 +529,23 @@ h4 {
   line-height: 0; 
   font-size: 0;
   float: right;
-  width: 75%;
+  /* width: 75%; */
   padding: 50px;
-  border-left: 2px solid #f4412a;
+  /* border-left: 2px solid #f4412a; */
   text-align: center;
+}
+
+.description {
+  padding: 50px;
+  padding-bottom: 0px;
+}
+
+@media screen and (max-width: 850px) {
+  .description { 
+    width: 100%;
+    padding: 20px 20px;
+    border: none;
+  }
 }
 
 
@@ -551,7 +564,7 @@ h4 {
 }
 
 .project-images img {
-  margin: 0 20px 20px 0px;
+  margin: 0 0px 20px 0px;
   max-width:100%; 
   height: auto; 
 }
@@ -576,16 +589,6 @@ h4 {
     margin: 0 0 20px 0;
     width: 100% !important;
   }
-}
-
-.project-images img:hover {
-  outline: 2px solid #f4412a;/*
-  box-shadow: 5px 5px 0px 0px #f4412a;*/
-}
-
-.project-images .hide-hover img:hover {
-  outline: none;
-  box-shadow: none;
 }
 
 .project-images .desktop-only {
